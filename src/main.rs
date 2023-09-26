@@ -32,10 +32,14 @@ fn main() {
 
     let mut rng = StdRng::seed_from_u64(seed);
 
-    let subkey_count = rng.gen_range(100..200);
-    let type_1_key_count = rng.gen_range(20000..30000);
-    let type_2_key_count = rng.gen_range(20000..30000);
-    let type_3_key_count = rng.gen_range(20000..30000);
+    // let subkey_count = rng.gen_range(100..200);
+    // let type_1_key_count = rng.gen_range(20000..30000);
+    // let type_2_key_count = rng.gen_range(20000..30000);
+    // let type_3_key_count = rng.gen_range(20000..30000);
+    let subkey_count = 150;
+    let type_1_key_count = 20000;
+    let type_2_key_count = 20000;
+    let type_3_key_count = 20000;
 
     println!("Subkey count: {}, type 1 SMT key count: {}, type 2 SMT key count: {}, type 3 SMT key count: {}",
         subkey_count, type_1_key_count, type_2_key_count, type_3_key_count
